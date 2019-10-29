@@ -1,0 +1,44 @@
+
+#header{
+    background-color: rgb(52,58,64);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 6px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+.left-container{
+    background-color: rgb(248,249,250);
+    height: 750px;
+}
+
+.right-container{
+    background-color: rgb(255,255,255);
+}
+
+.city{
+    padding: 4px 4px 4px 15px;
+    background-color: rgb(255,255,255);
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    margin-top: -1px;
+}
+
+.details{
+    padding: 15px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+.day{
+    background-color: rgb(0,123,255);
+    color: rgb(255,255,255);
+    border-style: hidden;
+    border-radius: 4px;
+    font-size: 12px;
+}
