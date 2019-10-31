@@ -23,7 +23,14 @@ $(".btn").click(function(){
     }
 
     textbox.val("");
-    cities.push(search)
+
+    if(cities === null){
+        cities = [search]
+    }
+    else{
+        cities.push(search)
+    }
+    
     
     
     SearchHistory(search);
