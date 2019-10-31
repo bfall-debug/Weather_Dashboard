@@ -8,6 +8,7 @@
     width: 100%;
     text-align: center;
     display: inline-block;
+    
 }
 .left-container{
     background-color: rgb(248,249,250);
@@ -41,4 +42,12 @@
     border-style: hidden;
     border-radius: 4px;
     font-size: 12px;
+}
+
+.UV{
+    background-color: crimson;
+    padding: 1px;
+    border-style: hidden;
+    border-radius: 2px;
+    color: white;
 }
