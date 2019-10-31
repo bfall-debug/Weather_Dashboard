@@ -40,7 +40,8 @@ $(".btn").click(function(){
 
 });
 
-$(".city").click(function(){
+// $(".city").click(function(){
+$(document).on("click", ".city", function(){
     GetData($(this).text())
 });
 
@@ -154,3 +155,4 @@ function SearchHistory(citySearch){
     $(".left-container").append(city);
     
 }
+
