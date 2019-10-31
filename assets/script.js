@@ -13,6 +13,7 @@ cities.forEach(function(city){
 
 
 $(".btn").click(function(){
+    cities = JSON.parse(localStorage.getItem('cities'));
 
     var textbox = $(this).parent().siblings("#textbox")
     var search = textbox.val()
@@ -23,20 +24,20 @@ $(".btn").click(function(){
 
     textbox.val("");
     cities.push(search)
-    localStorage.setItem("cities", JSON.stringify(cities));
-
-    NewSearch(search);
+    
+    
     SearchHistory(search);
-
+    GetData(search);
+    
+    localStorage.setItem("cities", JSON.stringify(cities));
 
 });
 
 $(".city").click(function(){
-    alert($(this).text());
-    NewSearch($(this).text())
+    GetData($(this).text())
 });
 
-function NewSearch(citySearch){
+function GetData(citySearch){
     
 
     var header = $("<h3>");
