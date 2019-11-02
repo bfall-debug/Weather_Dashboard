@@ -115,14 +115,12 @@ function GetData(citySearch){
             method: "GET"
         }).then(function(response) {
             
-        
-    for( i = 0; i < 5; i++ ){
+        console.log(response)
+    for( i = 5; i < response.list.length; i += 8 ){
         var day = $("<div>");
         day.addClass("col-2 day px-1 pt-2");
-        var CurrentDate = moment();
-        CurrentDate.add(i, 'days').format("L");
         var date = $("<h6>");
-        date.text(CurrentDate.format("L"));
+        date.text(response.list[i].dt_txt)
 
         var icon = $("<img>");
         var iconcode = response.list[i].weather[0].icon;
